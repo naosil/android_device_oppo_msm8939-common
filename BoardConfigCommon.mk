@@ -175,9 +175,3 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Inherit from proprietary files
-ifeq ($(FORCE_32_BIT),true)
-include vendor/oppo/msm8939-common-32/BoardConfigVendor.mk
-else
-include vendor/oppo/msm8939-common-64/BoardConfigVendor.mk
-endif
